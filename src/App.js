@@ -15,6 +15,9 @@ class App extends React.Component {
     let labradors = [];
 
     //your code here
+
+    //use this.dogs to iterate
+
     if (labradors.length > 0) {
     this.setState({labradors : []})
   }
@@ -25,7 +28,7 @@ class App extends React.Component {
       <div className="App">
         <p>List of Labradors!</p>
         <p>{this.state.labradors && JSON.stringify(this.state.labradors)}</p>
-        <button onClick={this.fetchLabradors(this.dogs)}>Fetch!</button>
+        <button onClick={this.fetchLabradors}>Fetch!</button>
       </div>
     );
   }
