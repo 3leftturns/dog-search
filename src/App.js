@@ -17,9 +17,8 @@ class App extends React.Component {
     //your code here
 
     //use this.dogs to iterate
-
     if (labradors.length > 0) {
-    this.setState({labradors : []})
+    this.setState({labradors : labradors})
   }
   }
 
